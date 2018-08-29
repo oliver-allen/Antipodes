@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <p>Enter the city or country you want to find the antipodes of</p>
+    <form action="/antipodes" method="POST">
+      <input type="text" required name="location" placeholder="City"/>
+      <input type="submit" value="Find antipodes"/>
+    </form>
+
+  </body>
+</html>
